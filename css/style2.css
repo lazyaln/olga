@@ -211,7 +211,8 @@ ul li a:hover{
 	letter-spacing: 3px;
 }
 .footer{
-   background-color: #000;
+   background-color: black;
+	color: #333;
    width: 100vw;
 	text-align: center;
 	padding: 20px;
@@ -347,8 +348,34 @@ ul li a:hover{
 	}
 }
 @media screen and (max-width: 600px) {
+	.context{
+		width:100%;
+		padding: 20px;
+	}
+	.work-context h1{
+		font-size: 18pt;
+	}
+	.work-context h2, .work-context h3, .work-context h3 a {
+		font-size: 18pt;;
+	}
+	.work-img {
+		height: 52vw;
+		background-size: contain;
+	}
+	#portfolio{
+		height: auto;
+	}
+	.bg-text {
+		font-size: 35pt;
+	}
+	.work-menu {
+		background: #333;
+	}
 	.work-history{
 		display: none;
+	}
+	#about h2{
+		width: auto;
 	}
 	.work-historyM{
 		display: block;
@@ -509,6 +536,7 @@ ul li a:hover{
 	position: relative;
 	letter-spacing: 1px;
 	color: #fff;
+	background: #000;
 	transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
