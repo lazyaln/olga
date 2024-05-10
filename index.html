@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="SHORTCUT ICON" href="img/favicon.ico" />
+   <link rel="icon" href="img/favicon.ico" type="image/ico" />
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta property="og:title" content="小嵐作品集" >
+   <meta property="og:image" content="img/lan-image.jpg">
+   <meta property="og:description" content="Hi I'm Olga 小嵐.致力於數位UI設計,喜歡插畫也研究前端.這是小嵐的作品集" >
+   <title>Lan' s Portfolio</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="css/style2.css" />
+   <link rel="stylesheet" href="css/animate.css" />
+   <script src="js/jquery.min.js"></script>
+   <script src="js/main.js"></script>
+</head>
+<script>
+   $(window).scroll(function(){
+   //滑動後固定上方選單
+   if($(this).scrollTop()>100){
+   $('.navbar').addClass('navbar-fixed-top animated fadeInDown');
+   } else {
+   $('.navbar').removeClass('navbar-fixed-top animated fadeInDown');
+   }
+   });
+   //點擊事件
+   $(document).ready(function(e) {
+   //點擊滑動至該區塊
+   $(".home").click(function(){
+   $("html,body").animate({scrollTop:"0px"},800);
+   });
+   $(".portfolio").click(function(){
+   $("html,body").animate({scrollTop:$("#portfolio").position().top},800);
+   });
+   $(".about").click(function(){
+   $("html,body").animate({scrollTop:$("#about").position().top},800);
+   });
+   $(".webdesign").click(function(){
+   $("#webworks").css({display:"block"});
+   $("#illworks").css({display:"none"});
+   $("#uiworks").css({display:"none"});
+   $('.webdesign').addClass('now');
+   $('.illdesign').removeClass('now');
+   $('.uidesign').removeClass('now');
+   });
+
+   $(".nav-work01").click(function(){
+   $(".work1").css({display:"block"});
+   $(".work2").css({display:"none"});
+   $(".work3").css({display:"none"});
+   $(".work4").css({display:"none"});
+   $(".work5").css({display:"none"});
+   });
+   $(".nav-work02").click(function(){
+   $(".work1").css({display:"none"});
+   $(".work2").css({display:"block"});
+   $(".work3").css({display:"none"});
+   $(".work4").css({display:"none"});
+   $(".work5").css({display:"none"});
+   });
+   $(".nav-work03").click(function(){
+   $(".work1").css({display:"none"});
+   $(".work2").css({display:"none"});
+   $(".work3").css({display:"block"});
+   $(".work4").css({display:"none"});
+   $(".work5").css({display:"none"});
+   });
+   $(".nav-work04").click(function(){
+   $(".work1").css({display:"none"});
+   $(".work2").css({display:"none"});
+   $(".work3").css({display:"none"});
+   $(".work4").css({display:"block"});
+   $(".work5").css({display:"none"});
+   });
+   $(".nav-work05").click(function(){
+   $(".work1").css({display:"none"});
+   $(".work2").css({display:"none"});
+   $(".work3").css({display:"none"});
+   $(".work4").css({display:"none"});
+   $(".work5").css({display:"block"});
+   });
+   
+   // $(".illdesign").click(function(){
+   // $("#webworks").css({display:"none"});
+   // $("#illworks").css({display:"block"});
+   // $("#uiworks").css({display:"none"});
+   // $('.illdesign').addClass('now');
+   // $('.uidesign').removeClass('now');
+   // $('.webdesign').removeClass('now');
+   // });
+   // $(".uidesign").click(function(){
+   // $("#webworks").css({display:"none"});
+   // $("#illworks").css({display:"none"});
+   // $("#uiworks").css({display:"block"});
+   // $('.uidesign').addClass('now');
+   // $('.illdesign').removeClass('now');
+   // $('.webdesign').removeClass('now');
+   
+   //});
+   
+   });
+ </script>
+<body>
+   <div class="main">
+      <div class="menuM">
+         <button class="burgerBtn burgerBtn-htx">
+             <span>toggle menu</span>
+         </button>
+     </div>
+      <ul id="nav" class="menuPC">
+         <li class="portfolio"><a href="javascript:;" id="menu1">PORTFOLIO</a></li>
+         <li class="about"><a href="javascript:;" id="menu2"><span>ABOUT</span><span>ME</span></a></li>
+         <li class=""><a href="mailto:lastest@hotmail.com.tw">CONTACT</a></li>
+         <li class="facebook"><a href="https://www.facebook.com/xiao.lan.33">
+            <img src="../img/fb.svg" alt="facebook">
+         </a></li>
+         <li class="ig">
+            <a href="https://www.instagram.com/lan.lan.hsiao/">
+            <img src="../img/ig.svg" alt="instagram">          
+            </a>
+         </li>
+      </ul>
+   </div>
+   <article class="portfolio work1" id="portfolio">
+      <div class='work-context'>
+         <div class="top">
+            <div class="context">
+               <div class="date">2017</div>
+               <h1>Acer liquid life</h1>
+               <p>RWD視覺設計、網頁切版、動態設計</p>
+            </div>
+         </div>
+         <div class="btm">
+            <div class="context">
+               <h2>Website</h2>
+               <h3><a href="">GO TO</a></h3>
+               <div class='bg-text'>PORTIFOLIO</div>
+            </div>
+         </div>
+      </div>
+      <div class='work-img'></div>
+   </article>
+   <article class="portfolio work2" id="portfolio">
+      <div class='work-context'>
+         <div class="top">
+            <div class="context">
+               <div class="date">2016</div>
+               <h1>台達之星 點亮未來</h1>
+               <p>RWD視覺設計、網頁切版、動態設計</p>
+            </div>
+         </div>
+         <div class="btm">
+            <div class="context">
+               <h2>Website</h2>
+               <h3><a href="">GO TO</a></h3>
+               <div class='bg-text'>PORTIFOLIO</div>
+            </div>
+         </div>
+      </div>
+      <div class='work-img'></div>
+   </article>
+   <article class="portfolio work3" id="portfolio">
+      <div class='work-context'>
+         <div class="top">
+            <div class="context">
+               <div class="date">2016</div>
+               <h1>OFFICE 2016</h1>
+               <p>RWD視覺設計、網頁切版、動態設計</p>
+            </div>
+         </div>
+         <div class="btm">
+            <div class="context">
+               <h2>Website</h2>
+               <h3><a href="">GO TO</a></h3>
+               <div class='bg-text'>PORTIFOLIO</div>
+            </div>
+         </div>
+      </div>
+      <div class='work-img'></div>
+   </article>
+   <article class="portfolio work4" id="portfolio">
+      <div class='work-context'>
+         <div class="top">
+            <div class="context">
+               <div class="date">2017</div>
+               <h1>Visual Studio</h1>
+               <p>RWD視覺設計、網頁切版、動態設計</p>
+            </div>
+         </div>
+         <div class="btm">
+            <div class="context">
+               <h2>Website</h2>
+               <h3><a href="">GO TO</a></h3>
+               <div class='bg-text'>PORTIFOLIO</div>
+            </div>
+         </div>
+      </div>
+      <div class='work-img'></div>
+   </article>
+   <article class="portfolio work5" id="portfolio">
+      <div class='work-context'>
+         <div class="top">
+            <div class="context">
+               <div class="date">2017</div>
+               <h1>Luxgen 天菜指南</h1>
+               <p>RWD視覺設計、網頁切版、動態設計</p>
+            </div>
+         </div>
+         <div class="btm">
+            <div class="context">
+               <h2>Website</h2>
+               <h3><a href="">GO TO</a></h3>
+               <div class='bg-text'>PORTIFOLIO</div>
+            </div>
+         </div>
+      </div>
+      <div class='work-img'></div>
+   </article>
+   <nav class="work-menu">
+      <div class="nav-text">
+         <a href="#">WEBSITE</a>
+         <a href="#">ILLUSTRATION</a>
+         <!--a href="#">UI</a!-->
+      </div>
+      <div class="nav-img">
+         <!--a href="#" class="btn-prev"><img src="../img/prev.svg" alt=""></a!-->
+         <a href="#" class="nav-work01"><img src="../img/work_19.jpg" alt=""></a>
+         <a href="#" class="nav-work02"><img src="../img/work_20.jpg" alt=""></a>
+         <a href="#" class="nav-work03"><img src="../img/work_21.jpg" alt=""></a>
+         <a href="#" class="nav-work04"><img src="../img/work_22.jpg" alt=""></a>
+         <a href="#" class="nav-work05"><img src="../img/work_23.jpg" alt=""></a>
+         <!--a href="#" class="btn-next"><img src="../img/next.svg" alt=""></a!-->
+      </div>
+   </nav>
+   
+   <div id="about">
+      <h1><img src="../img/lan-bighead.svg" alt=""></h1>
+      <h2><span>OLGA</span><span>邱筱嵐</span></h2>
+      <div class="work-history">
+         <ul class="work-time">
+            <li>1990/12</li>
+            <li>2012/8</li>
+            <li>2013/9</li>
+            <li>2015/5</li>
+            <li>2016/3</li>
+            <li>2017/7</li>
+            <li>2024/3</li>   
+         </ul>
+         <ul class="work-content">
+            <li>桃園 出生</li>
+            <li>科瑪數位 互動實習生</li>
+            <li>元智大學 資傳系 互動多媒體組</li>
+            <li>台灣淘米 美術設計師</li>
+            <li>數位因子 網頁設計師</li>
+            <li>十八設計 視覺設計師</li>
+            <li>新北 保母</li>
+         </ul>
+         <p>0932209193</p>
+         <p>lastest@hotmail.com.tw</p>
+      </div>
+      <ul class="work-historyM">
+         <li><span class="about-title">經歷 Experience：</span><br>
+            &nbsp;&nbsp; ．2024/3~2017/10，保母
+            <p>懷孕、育兒、照顧孩子、安排課程、建立生活秩序</p>
+            &nbsp;&nbsp; ．2016/6～2017/9，18Design 網頁設計師
+            <p>網頁維護優化，活動網頁視覺設計及切版、電子報、社群廣告圖設計、UI動線規劃、協助設計同仁切版、與前端工程師溝通</p>
+            &nbsp;&nbsp; ．2015/8~2016/3，數位因子　網頁設計師
+            <p>優化、維護舊有網站，公司模板資料搜集設計，文案上稿，活動、電商網站、官網視覺設計及RWD切版製作，廣告banner製作，主要使用bootstrap跟scss切版。</p>
+            &nbsp;&nbsp; ．2013/11~2015/5，台灣淘米　美術設計師
+            <p>活動網頁、官方網頁視覺、切版製作，Flash動、靜態banner製作、APP UI設計。</p>
+            &nbsp;&nbsp; ．2012/07~2012/09，科瑪數位 互動實習生
+            <p>主要擔任互動設計助理，負責排版、動畫腳本設計、活動專案角色設計、協助客服及部分庶務工作。</p>
+            &nbsp;&nbsp; ．1990，桃園 出生
+            <p>探索世界，發現世界美好</p>
+        </li>
+        <li><span class="about-title">專長 Speciality：</span><br>
+         &nbsp;&nbsp;．官網、活動網頁RWD視覺風格設計<br>
+         &nbsp;&nbsp;．EDM、Banner、數位插圖、海報設計<br>
+         &nbsp;&nbsp;．UI/UX 動線規劃<br>
+         &nbsp;&nbsp;．網頁切版、元件動態設計<br>
+         &nbsp;&nbsp;．網站維護優化
+         &nbsp;&nbsp;</li>
+         <p>0932209193</p>
+         <p><a href="mailto:lastest@hotmail.com.tw" style="color:cadetblue;">HIRE ME</a></p>
+      </ul>
+      
+   </div>
+   <div class="motto"><p>Design Is Simple.  But Simple Is Difficult</p></div>
+   <div class="footer"><p>Copyright © 2024 OLGA All rights reserved</p></div>
+</body>
+</html>
