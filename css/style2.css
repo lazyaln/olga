@@ -535,8 +535,7 @@ ul li a:hover{
 	text-align: center;
 	position: relative;
 	letter-spacing: 1px;
-	color: #fff;
-	background: #000;
+	color: #000;
 	transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
