@@ -369,7 +369,7 @@ ul li a:hover{
 		font-size: 35pt;
 	}
 	.work-menu {
-		background: #333;
+		background:#333;
 	}
 	.work-history{
 		display: none;
@@ -599,6 +599,7 @@ ul li a:hover{
 		letter-spacing: 1.5px;
 		padding: 12px 11px 8px;
 		color: white;
+		background:transparent;
 		transition: all 0.5s;
 		-moz-transition: all 0.5s;
 		-webkit-transition: all 0.5s;
