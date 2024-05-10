@@ -601,6 +601,7 @@ ul li a:hover{
 		display: block;
 		position: relative;
 		text-align: center;
+		text-decoration: none;
 		letter-spacing: 1.5px;
 		padding: 12px 11px 8px;
 		color: white;
