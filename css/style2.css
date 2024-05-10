@@ -340,6 +340,9 @@ ul li a:hover{
 	display: none;
 }
 @media screen and (max-width: 1024px) {
+	.main{
+		background:#fff url('../img/main.jpg') no-repeat scroll center;
+	}
 	.portfolio .work-context, .portfolio .work-img{
 		width: 100%;
 	}
